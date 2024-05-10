@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="Survey form.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form with the required information</p>
+    <form action="https://survey-form.freecodecamp.rocks." method="post" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your Name" required /></label>
+        <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label for="age" id="number-label">Age: <input id="number" placeholder="Years" type="number" name="age" min="10" max="60" /></label>
+      </fieldset>
+      <fieldset>
+         <label id="des1">Do you use Social Media: 
+            <select id="dropdown">
+              <option type="text" name="agreement" value="None" selected>Choose from</option>
+              <option type="text" name="agreement" Value="0">No</option>
+              <option type="text" name="agreement" value="1">Yes</option>
+            </select>
+         </label>
+      </fieldset>
+      <fieldset>
+        <label id="des2">For Which purpose do you use Social Media:</label>
+          <input class="inline" id="education" type="radio" name="purpose" value="1"/><label for="education">Education</label>
+          <br><input class="inline" id="socializing" type="radio" name="purpose" value="1"/><label for="socializing">Socializing</label>
+          <br><input class="inline" id="other" type="radio" name="purpose" value="1"/><label for="other">Other</label>
+      </fieldset>  
+      <fieldset>
+          <label id="des3">Which plateform do you use:</label>
+          <input class="inline" id="facebook" type="checkbox" name="platform" value="1"/><label for="facebook">Facebook</label>
+          <br><input class="inline" id="tiktok" type="checkbox" name="platform" value="2"/><label for="tiktok">Tiktok</label>
+          <br><input class="inline" id="instagram" type="checkbox" name="platform" value="3"/><label for="instagram">Instagram</label>
+          <br><input class="inline" id="twitter" type="checkbox" name="platform" value="4"/><label for="twitter">Twitter</label>
+          <br><input class="inline" id="snake-video" type="checkbox" name="platform" value="5"/><label for="snake-video">Snack video</label>
+          <br><input class="inline" id="snapchat" type="checkbox" name="platform" value="6"/><label for="snapchat">Snapchat</label>
+          <br><input class="inline" id="youtube" type="checkbox" name="platform" value="7"/><label for="youtube">Youtube</label>
+          <br><input class="inline" id="other" type="checkbox" name="platform" value="8"/><label for="other">Other</label>
+         </label><hr>
+      </fieldset>
+      <label for="comments">Additional Comments: <textarea id="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea></label>
+      <button type="submit" id="submit">Submit</botton>
+    </form>
+</body>
+</html>
